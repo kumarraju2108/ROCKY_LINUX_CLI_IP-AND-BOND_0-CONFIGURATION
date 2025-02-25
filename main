@@ -1,0 +1,32 @@
+# 1. Using nmtui (Network Manager Text User Interface) (Recommended for simplicity)
+
+# Open the terminal and run:
+sudo nmtui
+
+# Select "Edit a connection".
+# Choose your network interface (e.g., eth0 or ens192).
+
+# Configure the IPv4 settings:
+# - Change "Method" to "Manual".
+# - Enter the IP Address, Gateway, and DNS servers.
+
+# Save and exit.
+
+# Restart the network service:
+sudo systemctl restart NetworkManager
+-------------------------------------------------------------------------BOND_0-------------------------------------------------------------------------------------------------------
+# sudo modprobe bonding
+# echo "bonding" | sudo tee -a /etc/modules-load.d/bonding.conf
+
+# Create the bond: " sudo nmcli connection add type bond ifname bond0 mode 802.3ad"
+# Attach interfaces as slaves: "sudo nmcli connection add type ethernet ifname eth0 master bond0"
+                               "sudo nmcli connection add type ethernet ifname eth1 master bond0"
+# AFTER THAT USE AGAIN "nmtui": to set ip address for bond.
+# sudo nmcli connection up bond0
+
+
+
+
+
+
+
