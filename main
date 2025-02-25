@@ -1,6 +1,6 @@
 # 1. Using nmtui (Network Manager Text User Interface) (Recommended for simplicity)
 
-# Open the terminal and run:
+# Open the terminal and run:-
 sudo nmtui
 
 # Select "Edit a connection".
