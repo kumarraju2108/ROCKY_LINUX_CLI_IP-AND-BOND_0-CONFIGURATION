@@ -1,4 +1,4 @@
-# 1. Using nmtui (Network Manager Text User Interface) (Recommended for simplicity)
+# 1. Using nmtui (Network Manager Text User Interface) (Recommended for simplicity).
 
 # Open the terminal and run:-
 sudo nmtui
